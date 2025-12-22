@@ -402,6 +402,16 @@ CMD ["node", "server.js"]
 4. Código fonte
 5. Build
 
+**Diagrama (Mermaid) - Ordem de layers otimizada para cache**:
+
+```mermaid
+flowchart TD
+  A[Dependências do sistema] --> B[package.json / requirements.txt]
+  B --> C[Instalação de dependências]
+  C --> D[Código fonte]
+  D --> E[Build / empacotamento]
+```
+
 ---
 
 ### 2.4. Limpar no Mesmo Layer
@@ -948,6 +958,19 @@ chmod +x analyze-image.sh
 ./analyze-image.sh my-app:latest
 ```
 
+**Diagrama (Mermaid) - Workflow de análise de imagem**:
+
+```mermaid
+flowchart TD
+  A[Início: analyze-image.sh IMAGE] --> B[Mostrar tamanho da imagem]
+  B --> C[Exibir layers com docker history]
+  C --> D[Rodar Dive para análise detalhada]
+  D --> E[Scan de vulnerabilidades com Trivy]
+  E --> F[Gerar SBOM com Syft]
+  F --> G[Lint Dockerfile com Hadolint]
+  G --> H[Fim]
+```
+
 ---
 
 ### 6.2. Workflow de Otimização
@@ -995,6 +1018,20 @@ docker stop test-$TAG
 echo -e "\n✅ Optimization complete!"
 echo "Original: $ORIGINAL_SIZE"
 echo "Optimized: $OPTIMIZED_SIZE"
+```
+
+**Diagrama (Mermaid) - Workflow de otimização de imagem**:
+
+```mermaid
+flowchart TD
+  A[Início: optimize-image.sh IMAGE TAG] --> B[Build original da imagem]
+  B --> C[Verificar tamanho original]
+  C --> D[Lint Dockerfile com Hadolint]
+  D --> E[Scan de vulnerabilidades com Trivy]
+  E --> F[Otimizar imagem com docker-slim]
+  F --> G[Verificar tamanho otimizado]
+  G --> H[Testar imagem otimizada]
+  H --> I[Fim]
 ```
 
 ---
@@ -1298,10 +1335,25 @@ CMD ["./app"]
 4. **Validação**: Testes, scanning, métricas
 
 **Workflow recomendado**:
-```
-Write Dockerfile → Lint (Hadolint) → Build → 
-Analyze (Dive) → Optimize → Scan (Trivy) → 
-Test → Deploy
+
+```mermaid
+flowchart LR
+  A[Write Dockerfile]
+  B[Lint Hadolint]
+  C[Build]
+  D[Analyze Dive]
+  E[Optimize Image]
+  F[Scan Trivy]
+  G[Test]
+  H[Deploy]
+
+  A --> B
+  B --> C
+  C --> D
+  D --> E
+  E --> F
+  F --> G
+  G --> H
 ```
 
 **Lembre-se**: Otimização não é apenas sobre tamanho, é sobre **segurança**, **performance** e **manutenibilidade**.
