@@ -100,6 +100,7 @@ A documentação detalhada pode ser encontrada na pasta `docs/`:
 - **[Conceitos Fundamentais](docs/concepts.md)**: Pilares do SDD (Design-First, SSOT, Codegen)
 - **[Fluxo de Trabalho](docs/workflow.md)**: Ciclo de vida completo do desenvolvimento
  - **[Guia de Migração Orientada a SDD](docs/sdd-migration-guide.md)**: Como usar SDD em migrações de libs, linguagens e frameworks com foco em performance e qualidade
+ - **[Estratégia de Adoção de SDD](docs/sdd-adoption-strategy.md)**: Playbook de adoção incremental (núcleo bem especificado + expansão gradual)
 
 ### IA e Automação
 - **[AI-Enhanced SDD](docs/ai-enhanced-sdd.md)**: Como usar IA em cada fase do SDD
@@ -120,6 +121,7 @@ A documentação detalhada pode ser encontrada na pasta `docs/`:
 
 ### Segurança e Qualidade
 - **[SDD e Segurança: Security-By-Spec](docs/sdd-security.md)**: Princípios, checklist de specs e integração com SAST
+- **[Riscos de IA e como SDD ajuda a mitigá-los](docs/ai-risks-and-sdd-mitigation.md)**: Acesso a dados, deleção, malware e estratégias de mitigação
 - **[Ferramentas SAST](docs/sast-tools.md)**: Static Application Security Testing para specs e código
 - **[Padronização de Código](docs/code-standardization-tools.md)**: Linters, formatters e ferramentas de qualidade
 - **[Docker: Segurança e Performance](docs/docker-security-performance.md)**: Otimização de imagens, scanning e boas práticas

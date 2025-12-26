@@ -181,3 +181,18 @@ Ferramentas de IA podem ajudar a:
 > A combinação de **SDD + Security-By-Spec + SAST** cria uma linha de defesa onde
 > a intenção segura é modelada na spec, validada automaticamente e refletida
 > de forma consistente no código e na infraestrutura.
+
+---
+
+## Riscos específicos de IA e como SDD ajuda
+
+O uso de IA (assistentes de código, agentes, ferramentas integradas a IDE/CI) traz riscos adicionais, como:
+
+- Acesso ou vazamento de dados pessoais/sensíveis
+- Apagamento ou corrupção de dados por agentes/scripts gerados por IA
+- Instalação de malware, backdoors ou dependências maliciosas
+
+Uma análise detalhada desses riscos e como **SDD + AppSec + CI/CD** ajudam a mitigá-los pode ser encontrada em:
+
+- [`docs/ai-risks-and-sdd-mitigation.md`](ai-risks-and-sdd-mitigation.md)
+- [`docs/ai-usage-policy.md`](ai-usage-policy.md): política de uso seguro de IA em desenvolvimento (dados, comandos, dependências)
