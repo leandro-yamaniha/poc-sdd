@@ -24,6 +24,51 @@ Esta metodologia ganha poder exponencial quando combinada com IA. Ferramentas co
 
 Veja o guia completo em [AI-Enhanced SDD](docs/ai-enhanced-sdd.md).
 
+### Por que SDD na era da IA generativa?
+
+Modelos de IA generativa conseguem produzir código, testes e documentação em grande velocidade, mas nem sempre de forma consistente com a arquitetura, os contratos existentes ou os padrões de qualidade do time. Conforme a quantidade de código gerado por IA aumenta, também aumenta o risco de divergência entre:
+
+- Especificações de APIs e eventos
+- Implementações de serviços
+- Documentação e contratos de consumo
+
+O SDD responde a esse cenário ao colocar a **spec como fonte única da verdade (SSOT)**. Em vez de deixar que cada interação com a IA crie “a sua própria versão da verdade”, o fluxo de trabalho é guiado pelos contratos:
+
+- A spec define o **modelo de dados, endpoints, mensagens e regras**.
+- O código (humano ou gerado por IA) deve **seguir e validar** contra essa spec.
+- Mudanças começam pela spec, não por refactors ad hoc no código.
+
+Na era da IA generativa, o SDD funciona como um **trilho**: permite aproveitar a velocidade da IA, sem abrir mão de previsibilidade e coerência arquitetural.
+
+### Relação entre SDD e IA generativa
+
+SDD e IA generativa se complementam de forma natural:
+
+- **Na concepção da spec**: a IA pode ajudar a rascunhar contratos iniciais a partir de requisitos em linguagem natural, casos de uso ou specs existentes.
+- **Na evolução da spec**: a IA pode sugerir ajustes, detectar inconsistências e apontar impactos de mudanças em consumidores e provedores.
+- **Na geração de artefatos**: a partir de uma spec forte, a IA auxilia a gerar implementações, testes de contrato, clientes e exemplos de uso.
+- **Na compreensão de sistemas legados**: combinando SDD com IA, é possível extrair specs de bases legadas e usá-las como novo ponto de verdade.
+
+O ponto central é que **a IA trabalha a serviço da spec**, não o contrário. Quando há conflito entre o que a IA sugere e o que a spec define, a spec vence – e o fluxo de SDD orienta como revisar e alinhar tudo de forma controlada.
+
+### Riscos, limitações e como SDD ajuda a mitigá-los
+
+O uso de IA generativa traz riscos conhecidos para desenvolvimento de software, como:
+
+- **Alucinações**: código ou contratos inventados que não existem no sistema real.
+- **Introdução de vulnerabilidades**: dependências inseguras, padrões de código frágeis ou exposição indevida de dados.
+- **Inconsistência entre serviços**: cada time usando a IA de forma diferente, gerando contratos incompatíveis entre si.
+- **Perda de rastreabilidade**: dificuldade em entender por que certos contratos ou estruturas de dados existem.
+
+O SDD ajuda a mitigar esses riscos ao exigir:
+
+- **Contratos explícitos e versionados**: specs revisadas, versionadas e sujeitas a code review, assim como o código.
+- **Validação automatizada**: linters, validadores e testes de contrato que checam se o código (inclusive o gerado por IA) está aderente à spec.
+- **Governança de mudanças**: qualquer alteração relevante começa pela spec, com visibilidade clara de impactos.
+- **Segurança orientada a contrato**: políticas de segurança e SAST podem ser aplicadas tanto às specs quanto ao código que as implementa.
+
+Em resumo, SDD não impede o uso de IA – ele **torna o uso de IA mais seguro, previsível e alinhado à arquitetura**, reduzindo a chance de o "assistente entusiasmado, mas pouco confiável" sair dos trilhos.
+
 ## 📚 Conteúdo
 
 A documentação detalhada pode ser encontrada na pasta `docs/`:
@@ -34,6 +79,7 @@ A documentação detalhada pode ser encontrada na pasta `docs/`:
 
 ### IA e Automação
 - **[AI-Enhanced SDD](docs/ai-enhanced-sdd.md)**: Como usar IA em cada fase do SDD
+- **[Spec Kit: Visão Geral](docs/spec-kit-overview.md)**: Introdução ao toolkit de Spec-Driven Development com IA
 - **[Workflow Spec Kit](docs/spec-kit-workflow.md)**: Processo estruturado em 4 fases (Specify → Plan → Tasks → Implement)
 - **[RAG, MCP e Agents](docs/rag-mcp-agents.md)**: Técnicas avançadas de IA para potencializar SDD
 - **[Integração com VS Code](docs/vscode-integration.md)**: Como conectar RAG, MCP e Agents ao VS Code
@@ -60,6 +106,7 @@ A documentação detalhada pode ser encontrada na pasta `docs/`:
 │   ├── concepts.md           # Conceitos fundamentais do SDD
 │   ├── workflow.md           # Fluxo de trabalho passo a passo
 │   ├── ai-enhanced-sdd.md    # SDD otimizado com IA
+│   ├── spec-kit-overview.md  # Visão geral do Spec Kit
 │   ├── spec-kit-workflow.md  # Workflow Spec Kit (4 fases)
 │   ├── rag-mcp-agents.md     # RAG, MCP e Agents
 │   ├── vscode-integration.md # Integração VS Code
