@@ -90,6 +90,7 @@ A documentação detalhada pode ser encontrada na pasta `docs/`:
 - **[Casos de Uso](docs/use-cases.md)**: Exemplos práticos de SDD + IA em cenários reais
 
 ### Segurança e Qualidade
+- **[SDD e Segurança: Security-By-Spec](docs/sdd-security.md)**: Princípios, checklist de specs e integração com SAST
 - **[Ferramentas SAST](docs/sast-tools.md)**: Static Application Security Testing para specs e código
 - **[Padronização de Código](docs/code-standardization-tools.md)**: Linters, formatters e ferramentas de qualidade
 - **[Docker: Segurança e Performance](docs/docker-security-performance.md)**: Otimização de imagens, scanning e boas práticas
@@ -169,6 +170,8 @@ A documentação detalhada pode ser encontrada na pasta `docs/`:
 - **[Design-First API Development](https://apisyouwonthate.com/blog/api-design-first-vs-code-first)**: APIs You Won't Hate - comparação detalhada
 - **[Contract-Driven Development](https://martinfowler.com/bliki/ContractTest.html)**: Martin Fowler sobre testes de contrato
 - **[Specification by Example](https://gojko.net/books/specification-by-example/)**: Livro de Gojko Adzic sobre especificações executáveis
+ - **[Kiro: IDE Agentic para SDD](docs/kiro-overview.md)**: Visão geral do Kiro e relação com Spec-Driven Development
+ - **[Tessl: Plataforma AI-Native orientada a Especificações](docs/tessl-overview.md)**: Visão geral do Tessl e sua abordagem spec-driven
 
 ### Especificações e Padrões
 

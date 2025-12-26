@@ -184,6 +184,67 @@ Identifique:
 - Estratégia de migração para clientes
 ```
 
+### Prompt 2.4: Auditoria de Segurança da Spec (Security-By-Spec)
+
+```
+Você é um especialista em segurança de APIs e em Security-By-Spec.
+
+Objetivo:
+Auditar a segurança desta especificação (OpenAPI/AsyncAPI) com base em um checklist
+de segurança orientado a SDD.
+
+Especificação:
+
+"""yaml
+[COLAR SPEC]
+"""
+
+Tarefa:
+Analise a spec e produza um relatório estruturado cobrindo, no mínimo, os itens abaixo:
+
+1. Autenticação e autorização
+   - Se existem securitySchemes definidos
+   - Se endpoints sensíveis exigem autenticação
+   - Se existem escopos/roles claros por operação
+
+2. Códigos de status relacionados à segurança
+   - Uso consistente de 401 (credenciais ausentes/inválidas)
+   - Uso consistente de 403 (credenciais válidas, mas sem permissão)
+   - Presença de 429 para rate limiting (quando aplicável)
+   - Schemas de erro documentados para respostas de segurança
+
+3. Dados sensíveis e PII
+   - Campos que carregam dados pessoais/sensíveis
+   - Riscos de vazamento de dados em responses e mensagens de erro
+   - Possíveis necessidades de mascaramento/anonimização
+
+4. Limites e restrições de uso
+   - Rate limiting e quotas documentados
+   - Tamanho máximo de payload e outras restrições relevantes
+   - Headers ou mecanismos de feedback de limites (ex.: X-RateLimit-*)
+
+5. Auditoria e compliance
+   - Operações críticas identificadas (ex.: mudanças de permissão, deleção de dados)
+   - Metadados de auditoria previstos (createdBy, createdAt, lastModifiedBy etc.)
+   - Pontos que podem impactar LGPD/GDPR ou outras regulações
+
+6. Canais assíncronos (se houver AsyncAPI)
+   - Quem pode publicar/consumir em cada canal
+   - Mensagens que carregam dados sensíveis
+   - Estratégia de dead letters e tratamento de erros sem vazamento de dados
+
+Formato do resultado:
+- Liste os achados organizados por seção do checklist acima.
+- Para cada achado, indique:
+  - Severidade (crítico/alto/médio/baixo)
+  - Descrição
+  - Trechos da spec relacionados (paths, operations, schemas, canais)
+  - Recomendações de correção/melhoria
+
+Se apropriado, sugira exemplos concretos de alterações na spec para corrigir
+os problemas mais críticos.
+```
+
 ---
 
 ## Fase 3: Implementação
