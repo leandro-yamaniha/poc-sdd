@@ -41,6 +41,13 @@ Quando precisar de exemplos:
   - Apenas o repositório/projeto necessário
   - Sem permissões de administração ou acesso global
 
+### 2.1 Agentes e MCP servers
+
+- Rodar agentes/servers MCP preferencialmente em **containers ou VMs isoladas**, não diretamente na máquina de desenvolvimento ou em runners críticos de CI.
+- Usar apenas **servidores, plugins e handlers aprovados** (whitelist interna), com revisão de origem/código sempre que possível.
+- Limitar o que agentes/MCP podem fazer via **APIs e adaptadores definidos em spec**, em vez de dar acesso irrestrito a shell, banco ou filesystem.
+- Monitorar logs e métricas desses agentes (comportamentos inesperados, acessos fora do padrão, downloads estranhos).
+
 ---
 
 ## 3. Scripts, comandos e automações sugeridos por IA

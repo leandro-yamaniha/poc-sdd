@@ -63,6 +63,7 @@ Foca em riscos como:
   - Pacotes NPM/PyPI pouco conhecidos ou maliciosos
   - Bibliotecas de terceiros sem reputação verificada
 - Código gerado com comportamentos escondidos em helpers, scripts de deploy, pipelines de CI.
+ - Agentes ou servidores MCP (Model Context Protocol) com plugins/handlers de terceiros executando código com permissões amplas na máquina de desenvolvimento ou no CI, sem revisão de origem/configuração
 
 **Impactos potenciais**
 
@@ -83,6 +84,7 @@ A tabela abaixo mostra como SDD + AppSec + CI/CD podem atuar em cada risco.
 | Apagamento/corrupção de dados via scripts/agents     | Fluxos de migração e mudanças descritos em `docs/sdd-migration-guide.md`, com steps pequenos e rollback explícito | Revisão humana obrigatória, uso de staging, backups e mecanismos de rollback/feature flags |
 | Instalação de dependências maliciosas               | Padrões de dependências e políticas em `docs/appsec-tools.md` e `ks/appsec/` servem como referência para IA | SCA (Software Composition Analysis), allow/deny lists de libs, validação manual antes de instalar |
 | Código com backdoors ou padrões suspeitos            | Especificação clara limita o espaço para comportamentos "fora da spec"; testes de contrato e segurança aumentam chance de detectar anomalias | SAST/Code Scanning, revisão de código manual, rotação de chaves e monitoração de tráfego |
+| Agentes ou MCP servers comprometidos (malware/vírus) | Arquiteturas orientadas a spec delimitam claramente quais operações de automação são permitidas e através de quais adaptadores/endpoints, reduzindo a superfície de ações perigosas | Execução de agentes/MCP em ambientes isolados (containers/VMs), whitelist de servidores/plugins aprovados, revisão de código/origem, monitoração de logs e tráfego |
 
 ---
 
