@@ -98,3 +98,30 @@ Guardar no próprio editor (ou em `docs/prompts-library.md`) prompts padrão par
   - Decidir contratos de API sozinho
   - Alterar spec sem discussão/diff revisado
 - Manter a **spec e os docs como autoridade**; Copilot é só o executor acelerado.
+
+---
+
+## Plan agent e Todo list
+
+O Copilot tem um recurso de **Plan agent** que permite criar planos detalhados antes de implementar, similar aos workflows do Windsurf.
+
+Com o Plan agent você pode:
+
+- Descrever uma tarefa de alto nível
+- Receber um plano com passos e perguntas abertas
+- Iterar no plano antes de aprovar
+- Executar passo a passo com acompanhamento via todo list
+
+Para detalhes completos, veja:
+
+- [`docs/copilot-plan-guide.md`](copilot-plan-guide.md) – Guia do Plan agent e Todo list
+
+---
+
+## Conexão com outros documentos
+
+- [`docs/copilot-memories.md`](copilot-memories.md) – Backup de instruções/memórias do Copilot
+- [`docs/copilot-plan-guide.md`](copilot-plan-guide.md) – Guia do Plan agent e Todo list
+- [`docs/github-copilot-web-guide.md`](github-copilot-web-guide.md) – Uso do Copilot na interface web
+- [`docs/ai-ides-comparison.md`](ai-ides-comparison.md) – Comparativo de ferramentas de IA
+- [`docs/ai-usage-policy.md`](ai-usage-policy.md) – Política de uso seguro de IA

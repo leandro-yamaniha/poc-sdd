@@ -102,3 +102,30 @@ Mantenha em `docs/prompts-library.md` uma seção para Windsurf com prompts de:
   - SAST/SCA
 - Encapsular mudanças: peça para o Windsurf focar **em um endpoint/módulo de cada vez**.
 - Rever manualmente decisões arquiteturais e de segurança; IA ajuda, mas não decide sozinha.
+
+---
+
+## Workflows
+
+Para padronizar ainda mais o fluxo SDD no Windsurf, você pode configurar **workflows** — sequências de ações automáticas ou semi-automáticas que guiam o agente.
+
+Exemplos de workflows úteis:
+
+- **Inicialização de projeto**: carregar specs e docs automaticamente.
+- **Task de implementação**: abrir spec → propor plano → implementar → validar.
+- **Validação antes de commit**: rodar testes, linters, secret scanning.
+- **Atualização de contrato**: bloquear código até spec ser atualizada.
+
+Para detalhes completos, templates e exemplos de configuração, veja:
+
+- [`docs/windsurf-workflows.md`](windsurf-workflows.md)
+- [`docs/windsurf-memories.md`](windsurf-memories.md) – Template de backup de memórias
+
+---
+
+## Conexão com outros documentos
+
+- [`docs/ides-sdd-overview.md`](ides-sdd-overview.md) – Visão geral de SDD + IA em IDEs
+- [`docs/ai-ides-comparison.md`](ai-ides-comparison.md) – Comparativo de ferramentas de IA
+- [`docs/ai-usage-policy.md`](ai-usage-policy.md) – Política de uso seguro de IA
+- [`docs/sdd-migration-guide.md`](sdd-migration-guide.md) – Guia de migração orientada a SDD
