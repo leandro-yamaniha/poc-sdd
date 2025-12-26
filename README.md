@@ -256,3 +256,7 @@ A documentação detalhada pode ser encontrada na pasta `docs/`:
 - **[How Stripe Designs APIs](https://stripe.com/blog/payment-api-design)**: Case Stripe
 - **[Netflix API Architecture](https://netflixtechblog.com/embracing-the-differences-inside-the-netflix-api-redesign-15fd8b3dc49d)**: Case Netflix
 - **[Spotify API Design](https://engineering.atspotify.com/2015/03/how-we-build-code-at-spotify/)**: Case Spotify
+
+## Licença
+
+Este projeto está licenciado sob a **MIT License**. Consulte o arquivo [`LICENSE`](LICENSE) na raiz do repositório para mais detalhes.
