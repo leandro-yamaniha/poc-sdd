@@ -202,8 +202,8 @@ Você pode guardar estes padrões em `docs/prompts-library.md` (seção GitHub W
 Este guia funciona em conjunto com:
 
 - [Guia: SDD com GitHub Copilot (IDE)](github-copilot-sdd-guide.md)
-- [SDD + IA em IDEs](ides-sdd-overview.md)
-- [Guia de Migração Orientada a SDD](sdd-migration-guide.md)
-- [Ferramentas de AppSec no Fluxo SDD](appsec-tools.md)
-- [SDD e Segurança: Security-By-Spec](sdd-security.md)
-- [Biblioteca de Prompts](prompts-library.md)
+- [SDD + IA em IDEs](../ides-sdd-overview.md)
+- [Guia de Migração Orientada a SDD](../../migration/sdd-migration-guide.md)
+- [Ferramentas de AppSec no Fluxo SDD](../../security/appsec-tools.md)
+- [SDD e Segurança: Security-By-Spec](../../security/sdd-security.md)
+- [Biblioteca de Prompts](../../advanced/prompts-library.md)

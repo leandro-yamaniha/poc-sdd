@@ -120,8 +120,8 @@ Para detalhes completos, veja:
 
 ## Conexão com outros documentos
 
-- [`docs/copilot-memories.md`](copilot-memories.md) – Backup de instruções/memórias do Copilot
-- [`docs/copilot-plan-guide.md`](copilot-plan-guide.md) – Guia do Plan agent e Todo list
-- [`docs/github-copilot-web-guide.md`](github-copilot-web-guide.md) – Uso do Copilot na interface web
-- [`docs/ai-ides-comparison.md`](ai-ides-comparison.md) – Comparativo de ferramentas de IA
-- [`docs/ai-usage-policy.md`](ai-usage-policy.md) – Política de uso seguro de IA
+- [copilot-memories.md](copilot-memories.md) – Backup de instruções/memórias do Copilot
+- [copilot-plan-guide.md](copilot-plan-guide.md) – Guia do Plan agent e Todo list
+- [github-copilot-web-guide.md](github-copilot-web-guide.md) – Uso do Copilot na interface web
+- [ai-ides-comparison.md](../ai-ides-comparison.md) – Comparativo de ferramentas de IA
+- [ai-usage-policy.md](../../security/ai-usage-policy.md) – Política de uso seguro de IA

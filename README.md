@@ -94,74 +94,81 @@ SDD não substitui as boas práticas de engenharia que já existiam antes – el
 
 ## 📚 Conteúdo
 
-A documentação detalhada pode ser encontrada na pasta `docs/`:
+A documentação detalhada pode ser encontrada na pasta `docs/`. Veja o [índice completo](docs/README.md).
 
 ### Fundamentos
-- **[Conceitos Fundamentais](docs/concepts.md)**: Pilares do SDD (Design-First, SSOT, Codegen)
-- **[Fluxo de Trabalho](docs/workflow.md)**: Ciclo de vida completo do desenvolvimento
- - **[Guia de Migração Orientada a SDD](docs/sdd-migration-guide.md)**: Como usar SDD em migrações de libs, linguagens e frameworks com foco em performance e qualidade
- - **[Estratégia de Adoção de SDD](docs/sdd-adoption-strategy.md)**: Playbook de adoção incremental (núcleo bem especificado + expansão gradual)
+- **[Conceitos Fundamentais](docs/fundamentals/concepts.md)**: Pilares do SDD (Design-First, SSOT, Codegen)
+- **[Fluxo de Trabalho](docs/fundamentals/workflow.md)**: Ciclo de vida completo do desenvolvimento
+- **[Casos de Uso](docs/fundamentals/use-cases.md)**: Exemplos práticos de SDD + IA
+- **[Estratégia de Adoção](docs/fundamentals/sdd-adoption-strategy.md)**: Playbook de adoção incremental
+- **[Estrutura de Repositório KS](docs/fundamentals/ks-repo-structure.md)**: Knowledge Snippets + SDD
 
-### IA e Automação
-- **[AI-Enhanced SDD](docs/ai-enhanced-sdd.md)**: Como usar IA em cada fase do SDD
-- **[SDD + IA em IDEs](docs/ides-sdd-overview.md)**: Princípios gerais para usar SDD com Windsurf, Cursor, Copilot e outras ferramentas
-- **[Spec Kit: Visão Geral](docs/spec-kit-overview.md)**: Introdução ao toolkit de Spec-Driven Development com IA
-- **[Workflow Spec Kit](docs/spec-kit-workflow.md)**: Processo estruturado em 4 fases (Specify → Plan → Tasks → Implement)
-- **[RAG, MCP e Agents](docs/rag-mcp-agents.md)**: Técnicas avançadas de IA para potencializar SDD
-- **[Integração com VS Code](docs/vscode-integration.md)**: Como conectar RAG, MCP e Agents ao VS Code
-- **[GitHub Copilot: Performance e Boas Práticas](docs/copilot-performance-best-practices.md)**: Otimização, limitações e custom instructions
-- **[Guia: SDD com Windsurf](docs/windsurf-sdd-guide.md)**: Como configurar e usar Windsurf em um fluxo SDD
-- **[Guia: SDD com Cursor](docs/cursor-sdd-guide.md)**: Como usar Cursor (Chat/Edit) respeitando specs e KS
-- **[Guia: SDD com GitHub Copilot](docs/github-copilot-sdd-guide.md)**: Como alinhar o Copilot à spec e aos docs
- - **[Guia: GitHub Copilot no GitHub.com](docs/github-copilot-web-guide.md)**: Uso do Copilot na interface web (PRs, arquivos, Code Scanning) em um fluxo SDD
-- **[As 15 Regras do Vibe Coding](docs/15-vibe-coding-rules.md)**: Regras implícitas do vibe coding e por que estão erradas
-- **[Armadilhas do Vibe Coding](docs/vibe-coding-pitfalls.md)**: Consequências práticas e como SDD resolve
-- **[Biblioteca de Prompts](docs/prompts-library.md)**: Prompts testados para geração, validação e testes
-- **[Casos de Uso](docs/use-cases.md)**: Exemplos práticos de SDD + IA em cenários reais
+### Segurança
+- **[Security-By-Spec](docs/security/sdd-security.md)**: Princípios e checklist de segurança
+- **[Ferramentas AppSec](docs/security/appsec-tools.md)**: SAST, SCA, DAST no fluxo SDD
+- **[Ferramentas SAST](docs/security/sast-tools.md)**: Static Application Security Testing
+- **[Riscos de IA](docs/security/ai-risks-and-sdd-mitigation.md)**: Mitigação com SDD
+- **[Política de Uso de IA](docs/security/ai-usage-policy.md)**: Uso seguro de ferramentas de IA
 
-### Segurança e Qualidade
-- **[SDD e Segurança: Security-By-Spec](docs/sdd-security.md)**: Princípios, checklist de specs e integração com SAST
-- **[Riscos de IA e como SDD ajuda a mitigá-los](docs/ai-risks-and-sdd-mitigation.md)**: Acesso a dados, deleção, malware e estratégias de mitigação
-- **[Ferramentas SAST](docs/sast-tools.md)**: Static Application Security Testing para specs e código
-- **[Padronização de Código](docs/code-standardization-tools.md)**: Linters, formatters e ferramentas de qualidade
-- **[Docker: Segurança e Performance](docs/docker-security-performance.md)**: Otimização de imagens, scanning e boas práticas
-- **[Guia de Otimização Docker](docs/docker-optimization-guide.md)**: Ferramentas práticas, layers, cache e workflows
+### Ferramentas SDD
+- **[Spec Kit](docs/tools/spec-kit-overview.md)**: Toolkit do GitHub para SDD
+- **[Workflow Spec Kit](docs/tools/spec-kit-workflow.md)**: 4 fases (Specify → Plan → Tasks → Implement)
+- **[Kiro](docs/tools/kiro-overview.md)**: IDE Agentic da Amazon
+- **[Tessl](docs/tools/tessl-overview.md)**: Plataforma AI-Native
 
-### Exemplos
-- **[specs/openapi.yaml](specs/openapi.yaml)**: Exemplo de especificação OpenAPI 3.0
+### IA e IDEs
+- **[Visão Geral](docs/ai-ides/ides-sdd-overview.md)**: Princípios de SDD + IA em IDEs
+- **[Comparativo de Ferramentas](docs/ai-ides/ai-ides-comparison.md)**: Cursor, Windsurf, Copilot, Devin, Claude
+- **[AI-Enhanced SDD](docs/ai-ides/ai-enhanced-sdd.md)**: Como usar IA em cada fase
+- **Windsurf**: [Guia](docs/ai-ides/windsurf/windsurf-sdd-guide.md) | [Workflows](docs/ai-ides/windsurf/windsurf-workflows.md) | [Memórias](docs/ai-ides/windsurf/windsurf-memories.md)
+- **Cursor**: [Guia](docs/ai-ides/cursor/cursor-sdd-guide.md) | [Memórias](docs/ai-ides/cursor/cursor-memories.md)
+- **Copilot**: [Guia](docs/ai-ides/copilot/github-copilot-sdd-guide.md) | [Web](docs/ai-ides/copilot/github-copilot-web-guide.md) | [Plan](docs/ai-ides/copilot/copilot-plan-guide.md) | [Memórias](docs/ai-ides/copilot/copilot-memories.md)
+- **Devin**: [Guia](docs/ai-ides/devin/devin-sdd-guide.md) | [Memórias](docs/ai-ides/devin/devin-memories.md)
+- **Claude**: [Guia](docs/ai-ides/claude/claude-sonnet-sdd-guide.md) | [Memórias](docs/ai-ides/claude/claude-memories.md)
+
+### Migração e Performance
+- **[Guia de Migração SDD](docs/migration/sdd-migration-guide.md)**: Migrações orientadas a spec
+- **[Otimização Docker](docs/migration/docker-optimization-guide.md)**: Layers, cache, workflows
+- **[Docker: Segurança e Performance](docs/migration/docker-security-performance.md)**: Scanning e boas práticas
+
+### Práticas de Código
+- **[Padronização](docs/coding-practices/code-standardization-tools.md)**: Linters e formatters
+- **[Vibe Coding: Armadilhas](docs/coding-practices/vibe-coding-pitfalls.md)**: Consequências e como SDD resolve
+- **[15 Regras do Vibe Coding](docs/coding-practices/15-vibe-coding-rules.md)**: Regras implícitas e por que estão erradas
+- **[Integração VS Code](docs/coding-practices/vscode-integration.md)**: RAG, MCP e Agents
+
+### Avançado
+- **[RAG, MCP e Agents](docs/advanced/rag-mcp-agents.md)**: Técnicas avançadas de IA
+- **[Biblioteca de Prompts](docs/advanced/prompts-library.md)**: Prompts testados para cada fase
 
 ## 🏗️ Estrutura do Projeto
 
-```
+```text
 /
-├── docs/                      # Documentação detalhada
-│   ├── concepts.md           # Conceitos fundamentais do SDD
-│   ├── workflow.md           # Fluxo de trabalho passo a passo
-│   ├── ai-enhanced-sdd.md    # SDD otimizado com IA
-│   ├── spec-kit-overview.md  # Visão geral do Spec Kit
-│   ├── spec-kit-workflow.md  # Workflow Spec Kit (4 fases)
-│   ├── rag-mcp-agents.md     # RAG, MCP e Agents
-│   ├── vscode-integration.md # Integração VS Code
-│   ├── copilot-performance-best-practices.md # Performance GitHub Copilot
-│   ├── 15-vibe-coding-rules.md # As 15 regras do vibe coding
-│   ├── vibe-coding-pitfalls.md # Armadilhas do vibe coding
-│   ├── sast-tools.md         # Ferramentas SAST
-│   ├── code-standardization-tools.md # Padronização de código
-│   ├── docker-security-performance.md # Docker: Segurança e Performance
-│   ├── docker-optimization-guide.md # Guia de Otimização Docker
-│   ├── prompts-library.md    # Biblioteca de prompts
-│   └── use-cases.md          # Casos de uso práticos
-├── specs/                     # Especificações de exemplo
-│   └── openapi.yaml          # API de exemplo (User API)
-└── README.md                  # Este arquivo
+├── docs/                          # Documentação detalhada
+│   ├── README.md                  # Índice da documentação
+│   ├── fundamentals/              # Conceitos e fundamentos SDD
+│   ├── security/                  # Segurança e AppSec
+│   ├── tools/                     # Ferramentas SDD (Spec Kit, Kiro, Tessl)
+│   ├── ai-ides/                   # Guias de IA e IDEs
+│   │   ├── windsurf/              # Guias Windsurf
+│   │   ├── cursor/                # Guias Cursor
+│   │   ├── copilot/               # Guias GitHub Copilot
+│   │   ├── devin/                 # Guias Devin
+│   │   └── claude/                # Guias Claude Code
+│   ├── migration/                 # Migração e performance
+│   ├── coding-practices/          # Práticas de código
+│   ├── advanced/                  # Tópicos avançados
+│   └── plans/                     # Backup de planos
+└── README.md                      # Este arquivo
 ```
 
 ## 🚀 Quick Start
 
-1. **Explore a documentação**: Comece por [Conceitos Fundamentais](docs/concepts.md)
-2. **Veja a spec de exemplo**: Analise [specs/openapi.yaml](specs/openapi.yaml)
-3. **Use os prompts**: Aplique os prompts da [biblioteca](docs/prompts-library.md) no seu projeto
-4. **Experimente com IA**: Siga o guia [AI-Enhanced SDD](docs/ai-enhanced-sdd.md)
+1. **Explore a documentação**: Comece por [Conceitos Fundamentais](docs/fundamentals/concepts.md)
+2. **Entenda o fluxo**: Veja o [Workflow SDD](docs/fundamentals/workflow.md)
+3. **Use os prompts**: Aplique os prompts da [biblioteca](docs/advanced/prompts-library.md) no seu projeto
+4. **Experimente com IA**: Siga o guia [AI-Enhanced SDD](docs/ai-ides/ai-enhanced-sdd.md)
 
 ## 🛠️ Ferramentas Recomendadas
 

@@ -515,7 +515,7 @@ Marque quantos se aplicam ao seu projeto:
 ### Documentação Complementar
 - **[Armadilhas do Vibe Coding](vibe-coding-pitfalls.md)**: Consequências detalhadas das 15 regras
 - **[Workflow Spec Kit](spec-kit-workflow.md)**: Processo estruturado para evitar vibe coding
-- **[AI-Enhanced SDD](ai-enhanced-sdd.md)**: Como usar IA corretamente com specs
+- **[AI-Enhanced SDD](../ai-ides/ai-enhanced-sdd.md)**: Como usar IA corretamente com specs
 - **[Conceitos Fundamentais](concepts.md)**: Pilares do SDD
 
 ### Ferramentas

@@ -10,8 +10,8 @@ Definir regras práticas para o **uso de ferramentas de IA** (assistentes de có
 
 Esta política complementa:
 
-- [`docs/sdd-security.md`](sdd-security.md)
-- [`docs/ai-risks-and-sdd-mitigation.md`](ai-risks-and-sdd-mitigation.md)
+- [sdd-security.md](sdd-security.md)
+- [ai-risks-and-sdd-mitigation.md](ai-risks-and-sdd-mitigation.md)
 
 ---
 

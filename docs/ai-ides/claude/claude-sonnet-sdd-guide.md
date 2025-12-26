@@ -137,10 +137,10 @@ Exemplo de prompt:
 
 ## Integração com outros documentos
 
-- [SDD + IA em IDEs](ides-sdd-overview.md)
-- [AI-Enhanced SDD](ai-enhanced-sdd.md)
-- [Guia de Migração Orientada a SDD](sdd-migration-guide.md)
-- [Ferramentas de AppSec no Fluxo SDD](appsec-tools.md)
-- [SDD e Segurança: Security-By-Spec](sdd-security.md)
-- [Estrutura de um repositório de KS + IA + SDD](ks-repo-structure.md)
-- [Biblioteca de Prompts](prompts-library.md)
+- [SDD + IA em IDEs](../ides-sdd-overview.md)
+- [AI-Enhanced SDD](../ai-enhanced-sdd.md)
+- [Guia de Migração Orientada a SDD](../../migration/sdd-migration-guide.md)
+- [Ferramentas de AppSec no Fluxo SDD](../../security/appsec-tools.md)
+- [SDD e Segurança: Security-By-Spec](../../security/sdd-security.md)
+- [Estrutura de um repositório de KS + IA + SDD](../../fundamentals/ks-repo-structure.md)
+- [Biblioteca de Prompts](../../advanced/prompts-library.md)

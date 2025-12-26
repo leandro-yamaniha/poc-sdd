@@ -69,7 +69,7 @@ Mapeamento direto:
 
 - Nossa doc de **[Conceitos Fundamentais](concepts.md)** explica os princípios SDD que o Spec Kit operacionaliza.
 - O doc **[Workflow Spec Kit](spec-kit-workflow.md)** mostra o passo a passo detalhado das 4 fases (Specify → Plan → Tasks → Implement).
-- O doc **[AI-Enhanced SDD](ai-enhanced-sdd.md)** cobre padrões de uso de IA em cada fase do SDD, incluindo Spec Kit e outras ferramentas.
+- O doc **[AI-Enhanced SDD](../ai-ides/ai-enhanced-sdd.md)** cobre padrões de uso de IA em cada fase do SDD, incluindo Spec Kit e outras ferramentas.
 
 ---
 

@@ -125,7 +125,7 @@ Para detalhes completos, templates e exemplos de configuração, veja:
 
 ## Conexão com outros documentos
 
-- [`docs/ides-sdd-overview.md`](ides-sdd-overview.md) – Visão geral de SDD + IA em IDEs
-- [`docs/ai-ides-comparison.md`](ai-ides-comparison.md) – Comparativo de ferramentas de IA
-- [`docs/ai-usage-policy.md`](ai-usage-policy.md) – Política de uso seguro de IA
-- [`docs/sdd-migration-guide.md`](sdd-migration-guide.md) – Guia de migração orientada a SDD
+- [ides-sdd-overview.md](../ides-sdd-overview.md) – Visão geral de SDD + IA em IDEs
+- [ai-ides-comparison.md](../ai-ides-comparison.md) – Comparativo de ferramentas de IA
+- [ai-usage-policy.md](../../security/ai-usage-policy.md) – Política de uso seguro de IA
+- [sdd-migration-guide.md](../../migration/sdd-migration-guide.md) – Guia de migração orientada a SDD

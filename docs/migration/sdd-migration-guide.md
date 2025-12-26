@@ -194,15 +194,15 @@ A IA pode ajudar bastante neste contexto, desde que **a spec continue sendo o tr
 - Criar testes de contrato e casos de regressão baseados em exemplos reais.
 - Ajudar em refactors pontuais para adaptar código à nova versão de libs/frameworks.
 
-Veja também o documento [AI-Enhanced SDD](ai-enhanced-sdd.md) para ideias de prompts e fluxos.
+Veja também o documento [AI-Enhanced SDD](../ai-ides/ai-enhanced-sdd.md) para ideias de prompts e fluxos.
 
 ---
 
 ## Integração com outros documentos deste repositório
 
-- **[Conceitos Fundamentais](concepts.md)**: visão geral dos pilares do SDD.
-- **[Workflow Spec Kit](spec-kit-workflow.md)**: fluxo Specify → Plan → Tasks → Implement, que pode ser aplicado diretamente a migrações.
-- **[SDD e Segurança: Security-By-Spec](sdd-security.md)**: como levar requisitos de segurança para as specs.
-- **[Ferramentas de AppSec no Fluxo SDD](appsec-tools.md)**: visão de SAST, SCA, DAST e outras ferramentas no contexto de SDD.
-- **[Ferramentas SAST](sast-tools.md)**: detalhes de SAST e sua integração em pipelines.
-- **[Biblioteca de Prompts](prompts-library.md)**: prompts que podem ser adaptados para cenários de migração.
+- **[Conceitos Fundamentais](../fundamentals/concepts.md)**: visão geral dos pilares do SDD.
+- **[Workflow Spec Kit](../tools/spec-kit-workflow.md)**: fluxo Specify → Plan → Tasks → Implement, que pode ser aplicado diretamente a migrações.
+- **[SDD e Segurança: Security-By-Spec](../security/sdd-security.md)**: como levar requisitos de segurança para as specs.
+- **[Ferramentas de AppSec no Fluxo SDD](../security/appsec-tools.md)**: visão de SAST, SCA, DAST e outras ferramentas no contexto de SDD.
+- **[Ferramentas SAST](../security/sast-tools.md)**: detalhes de SAST e sua integração em pipelines.
+- **[Biblioteca de Prompts](../advanced/prompts-library.md)**: prompts que podem ser adaptados para cenários de migração.

@@ -637,5 +637,5 @@ Escolha um caso de uso similar ao seu contexto e:
 
 **Recursos Adicionais**:
 - [Biblioteca de Prompts](prompts-library.md)
-- [AI-Enhanced SDD](ai-enhanced-sdd.md)
+- [AI-Enhanced SDD](../ai-ides/ai-enhanced-sdd.md)
 - [Workflow Detalhado](workflow.md)

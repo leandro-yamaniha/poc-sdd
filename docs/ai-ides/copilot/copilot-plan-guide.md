@@ -205,7 +205,7 @@ Execute o plano, mas:
 
 ## Conexão com outros documentos
 
-- [`docs/github-copilot-sdd-guide.md`](github-copilot-sdd-guide.md) – Guia geral de uso do Copilot com SDD
-- [`docs/copilot-memories.md`](copilot-memories.md) – Backup de instruções/memórias do Copilot
-- [`docs/ai-ides-comparison.md`](ai-ides-comparison.md) – Comparativo de ferramentas de IA
-- [`docs/ai-usage-policy.md`](ai-usage-policy.md) – Política de uso seguro de IA
+- [github-copilot-sdd-guide.md](github-copilot-sdd-guide.md) – Guia geral de uso do Copilot com SDD
+- [copilot-memories.md](copilot-memories.md) – Backup de instruções/memórias do Copilot
+- [ai-ides-comparison.md](../ai-ides-comparison.md) – Comparativo de ferramentas de IA
+- [ai-usage-policy.md](../../security/ai-usage-policy.md) – Política de uso seguro de IA

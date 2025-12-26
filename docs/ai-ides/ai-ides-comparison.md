@@ -887,13 +887,13 @@ docs/
 
 Este comparativo complementa:
 
-- `docs/ides-sdd-overview.md` – Princípios comuns de uso de IA em IDEs com SDD
+- [ides-sdd-overview.md](ides-sdd-overview.md) – Princípios comuns de uso de IA em IDEs com SDD
 - Guias específicos por ferramenta:
-  - `docs/windsurf-sdd-guide.md`
-  - `docs/cursor-sdd-guide.md`
-  - `docs/github-copilot-sdd-guide.md`
-  - `docs/github-copilot-web-guide.md`
-  - `docs/devin-sdd-guide.md`
-  - `docs/claude-sonnet-sdd-guide.md`
-- `docs/ai-usage-policy.md` – Política de uso seguro de IA (dados, comandos, dependências, agentes/MCP)
-- `docs/ai-risks-and-sdd-mitigation.md` – Riscos de IA e como SDD + AppSec ajudam a mitigá-los
+  - [windsurf-sdd-guide.md](windsurf/windsurf-sdd-guide.md)
+  - [cursor-sdd-guide.md](cursor/cursor-sdd-guide.md)
+  - [github-copilot-sdd-guide.md](copilot/github-copilot-sdd-guide.md)
+  - [github-copilot-web-guide.md](copilot/github-copilot-web-guide.md)
+  - [devin-sdd-guide.md](devin/devin-sdd-guide.md)
+  - [claude-sonnet-sdd-guide.md](claude/claude-sonnet-sdd-guide.md)
+- [ai-usage-policy.md](../security/ai-usage-policy.md) – Política de uso seguro de IA
+- [ai-risks-and-sdd-mitigation.md](../security/ai-risks-and-sdd-mitigation.md) – Riscos de IA e mitigação

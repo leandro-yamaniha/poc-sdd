@@ -432,7 +432,7 @@ SDD:
 ## Recursos Adicionais
 
 - **[Workflow Spec Kit](spec-kit-workflow.md)**: Processo estruturado para evitar vibe coding
-- **[AI-Enhanced SDD](ai-enhanced-sdd.md)**: Como usar IA corretamente com specs
+- **[AI-Enhanced SDD](../ai-ides/ai-enhanced-sdd.md)**: Como usar IA corretamente com specs
 - **[Biblioteca de Prompts](prompts-library.md)**: Prompts estruturados vs vagos
 - **[Casos de Uso](use-cases.md)**: Exemplos reais de SDD funcionando
 

@@ -66,10 +66,10 @@ tests/          # Testes automatizados
 
 | Documento | Descrição |
 |-----------|-----------|
-| [`docs/sdd-security.md`](sdd-security.md) | Princípios de Security-By-Spec |
-| [`docs/ai-usage-policy.md`](ai-usage-policy.md) | Política de uso seguro de IA |
-| [`docs/sdd-migration-guide.md`](sdd-migration-guide.md) | Guia de migração orientada a SDD |
-| [`docs/appsec-tools.md`](appsec-tools.md) | Ferramentas de AppSec no fluxo SDD |
+| [sdd-security.md](../../security/sdd-security.md) | Princípios de Security-By-Spec |
+| [ai-usage-policy.md](../../security/ai-usage-policy.md) | Política de uso seguro de IA |
+| [sdd-migration-guide.md](../../migration/sdd-migration-guide.md) | Guia de migração orientada a SDD |
+| [appsec-tools.md](../../security/appsec-tools.md) | Ferramentas de AppSec no fluxo SDD |
 
 ---
 

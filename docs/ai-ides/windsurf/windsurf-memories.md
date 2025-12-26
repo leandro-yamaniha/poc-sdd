@@ -1,12 +1,11 @@
-# Memórias do Projeto (Backup Cursor)
+# Memórias do Projeto (Backup Windsurf)
 
-Este arquivo serve como **backup versionado** das memórias/regras de projeto configuradas no Cursor.
+Este arquivo serve como **backup versionado** das memórias de projeto configuradas no Windsurf.
 
 Mantenha este arquivo atualizado periodicamente para:
-
-- Garantir que regras importantes não se percam.
+- Garantir que memórias importantes não se percam.
 - Facilitar onboarding de novos desenvolvedores.
-- Permitir restauração em caso de reset do Cursor.
+- Permitir restauração em caso de reset do Windsurf.
 
 ---
 
@@ -27,7 +26,7 @@ Mantenha este arquivo atualizado periodicamente para:
 
 ## Estrutura do repositório
 
-```text
+```
 specs/          # Especificações OpenAPI, AsyncAPI, GraphQL
 docs/           # Documentação do projeto
 ks/             # Knowledge Snippets (templates)
@@ -62,18 +61,46 @@ tests/          # Testes automatizados
 
 ---
 
+## Convenções de código
+
+- _Ex.: Nomenclatura de arquivos: kebab-case._
+- _Ex.: Nomenclatura de variáveis: camelCase._
+- _Ex.: Commits seguem Conventional Commits._
+
+---
+
+## Dependências principais
+
+| Dependência | Versão | Uso |
+|-------------|--------|-----|
+| _Ex.: fastify_ | _4.x_ | _Framework HTTP_ |
+| _Ex.: zod_ | _3.x_ | _Validação de schemas_ |
+| _Ex.: prisma_ | _5.x_ | _ORM_ |
+
+---
+
+## Integrações externas
+
+- _Ex.: API de pagamentos: `https://api.pagamentos.com`_
+- _Ex.: Serviço de notificações: `https://notifications.internal`_
+
+---
+
 ## Links importantes
 
 | Documento | Descrição |
 |-----------|-----------|
-| [`docs/sdd-security.md`](sdd-security.md) | Princípios de Security-By-Spec |
-| [`docs/ai-usage-policy.md`](ai-usage-policy.md) | Política de uso seguro de IA |
-| [`docs/sdd-migration-guide.md`](sdd-migration-guide.md) | Guia de migração orientada a SDD |
-| [`docs/appsec-tools.md`](appsec-tools.md) | Ferramentas de AppSec no fluxo SDD |
+| [sdd-security.md](../../security/sdd-security.md) | Princípios de Security-By-Spec |
+| [ai-usage-policy.md](../../security/ai-usage-policy.md) | Política de uso seguro de IA |
+| [sdd-migration-guide.md](../../migration/sdd-migration-guide.md) | Guia de migração orientada a SDD |
+| [appsec-tools.md](../../security/appsec-tools.md) | Ferramentas de AppSec no fluxo SDD |
+| [`docs/windsurf-workflows.md`](windsurf-workflows.md) | Workflows configurados no Windsurf |
 
 ---
 
-## Regras para o Cursor (copiar para `.cursor/rules`)
+## Regras para o agente Windsurf
+
+Copie estas regras para o Windsurf ou para `.windsurfrules`:
 
 ```text
 # Regras de projeto (SDD)
@@ -107,25 +134,27 @@ tests/          # Testes automatizados
 
 ---
 
-## Como restaurar no Cursor
-
-1. Copie o bloco de regras acima.
-2. Cole em `.cursor/rules` na raiz do projeto.
-3. Ou cole no chat do Cursor no início da sessão como contexto.
-
----
-
 ## Histórico de atualizações
 
 | Data | Responsável | Descrição |
 |------|-------------|-----------|
 | _YYYY-MM-DD_ | _Nome_ | _Criação inicial_ |
+| _YYYY-MM-DD_ | _Nome_ | _Adicionado padrão X_ |
+
+---
+
+## Como restaurar memórias no Windsurf
+
+1. Abra o Windsurf no projeto.
+2. Acesse o painel de memórias.
+3. Copie e cole as seções relevantes deste arquivo.
+4. Ou copie o bloco de regras para `.windsurfrules`.
 
 ---
 
 ## Checklist de manutenção
 
-- [ ] Revisar regras semanalmente.
+- [ ] Revisar memórias semanalmente.
 - [ ] Atualizar este arquivo após mudanças importantes.
-- [ ] Sincronizar `.cursor/rules` com este backup.
+- [ ] Sincronizar `.windsurfrules` com as regras acima.
 - [ ] Compartilhar com novos membros do time.
