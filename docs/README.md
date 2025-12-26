@@ -143,10 +143,12 @@ Padrões e boas práticas de código.
 
 Tópicos avançados e recursos.
 
-| Documento | Descrição |
-|-----------|-----------|
-| [rag-mcp-agents.md](advanced/rag-mcp-agents.md) | RAG, MCP e agentes |
-| [prompts-library.md](advanced/prompts-library.md) | Biblioteca de prompts |
+- [RAG, MCP e Agents](advanced/rag-mcp-agents.md) – Técnicas avançadas de IA
+- [Biblioteca de Prompts](advanced/prompts-library.md) – Prompts testados para cada fase
+
+## Referências
+
+- [Referências SDD](references.md) – Pessoas, artigos, sites e livros sobre SDD
 
 ---
 
