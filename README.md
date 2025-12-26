@@ -69,6 +69,29 @@ O SDD ajuda a mitigar esses riscos ao exigir:
 
 Em resumo, SDD não impede o uso de IA – ele **torna o uso de IA mais seguro, previsível e alinhado à arquitetura**, reduzindo a chance de o "assistente entusiasmado, mas pouco confiável" sair dos trilhos.
 
+## Boas práticas clássicas e como o SDD as potencializa
+
+SDD não substitui as boas práticas de engenharia que já existiam antes – ele as **organiza em torno da especificação** como fonte única da verdade e cria um trilho claro para conectá-las.
+
+- **SDD como evolução, não ruptura**
+  - Requisitos bem escritos continuam essenciais, mas agora se materializam como **specs formais** (OpenAPI/AsyncAPI, contratos de eventos, schemas).
+  - Práticas como **API-First / Design-First**, TDD/BDD, code review e CI/CD seguem válidas; o SDD ajuda a amarrá-las à spec.
+
+- **Práticas clássicas que o SDD reforça**
+  - **API-First / Design-First**: o design de APIs antes do código passa a ser a regra, não a exceção.
+  - **TDD/BDD e contract testing**: cenários e contratos ganham um espelho direto na spec, reduzindo gaps entre testes e implementação.
+  - **Segurança (OWASP, ASVS, threat modeling)**: requisitos de segurança são traduzidos em **checklists de spec** e validações automatizadas.
+  - **CI/CD e automação**: pipelines passam a validar código e specs (lint, testes de contrato, SAST, SCA, quality gates) de forma integrada.
+
+- **Como encaixar SDD em times que já seguem boas práticas**
+  - Se o time já faz **API-First**, o próximo passo é versionar specs, revisá-las como código e plugar CI/CD em cima delas.
+  - Se o time já usa **TDD/BDD**, é alinhar casos de teste e contract tests aos cenários explícitos na spec.
+  - Se já existe foco em **segurança**, o movimento é levar políticas e requisitos de segurança para dentro das specs e dos checklists de revisão.
+
+- **O que SDD não resolve sozinho**
+  - Não substitui comunicação entre times, entendimento de domínio (DDD) ou boa governança de mudanças.
+  - Sem disciplina mínima (versionamento, revisão, testes, observabilidade), SDD e IA tendem a amplificar problemas em vez de resolvê-los.
+
 ## 📚 Conteúdo
 
 A documentação detalhada pode ser encontrada na pasta `docs/`:
@@ -76,14 +99,20 @@ A documentação detalhada pode ser encontrada na pasta `docs/`:
 ### Fundamentos
 - **[Conceitos Fundamentais](docs/concepts.md)**: Pilares do SDD (Design-First, SSOT, Codegen)
 - **[Fluxo de Trabalho](docs/workflow.md)**: Ciclo de vida completo do desenvolvimento
+ - **[Guia de Migração Orientada a SDD](docs/sdd-migration-guide.md)**: Como usar SDD em migrações de libs, linguagens e frameworks com foco em performance e qualidade
 
 ### IA e Automação
 - **[AI-Enhanced SDD](docs/ai-enhanced-sdd.md)**: Como usar IA em cada fase do SDD
+- **[SDD + IA em IDEs](docs/ides-sdd-overview.md)**: Princípios gerais para usar SDD com Windsurf, Cursor, Copilot e outras ferramentas
 - **[Spec Kit: Visão Geral](docs/spec-kit-overview.md)**: Introdução ao toolkit de Spec-Driven Development com IA
 - **[Workflow Spec Kit](docs/spec-kit-workflow.md)**: Processo estruturado em 4 fases (Specify → Plan → Tasks → Implement)
 - **[RAG, MCP e Agents](docs/rag-mcp-agents.md)**: Técnicas avançadas de IA para potencializar SDD
 - **[Integração com VS Code](docs/vscode-integration.md)**: Como conectar RAG, MCP e Agents ao VS Code
 - **[GitHub Copilot: Performance e Boas Práticas](docs/copilot-performance-best-practices.md)**: Otimização, limitações e custom instructions
+- **[Guia: SDD com Windsurf](docs/windsurf-sdd-guide.md)**: Como configurar e usar Windsurf em um fluxo SDD
+- **[Guia: SDD com Cursor](docs/cursor-sdd-guide.md)**: Como usar Cursor (Chat/Edit) respeitando specs e KS
+- **[Guia: SDD com GitHub Copilot](docs/github-copilot-sdd-guide.md)**: Como alinhar o Copilot à spec e aos docs
+ - **[Guia: GitHub Copilot no GitHub.com](docs/github-copilot-web-guide.md)**: Uso do Copilot na interface web (PRs, arquivos, Code Scanning) em um fluxo SDD
 - **[As 15 Regras do Vibe Coding](docs/15-vibe-coding-rules.md)**: Regras implícitas do vibe coding e por que estão erradas
 - **[Armadilhas do Vibe Coding](docs/vibe-coding-pitfalls.md)**: Consequências práticas e como SDD resolve
 - **[Biblioteca de Prompts](docs/prompts-library.md)**: Prompts testados para geração, validação e testes
